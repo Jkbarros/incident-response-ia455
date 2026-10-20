@@ -1,7 +1,9 @@
 # IA 455 - Incident Response
 
-College coursework archive for **IA 455 - Incident Response** at Eastern Michigan University.  
-Labs, quizzes, memory forensics practical work, and course assessments.
+![Incident response lifecycle](docs/demo.gif)
+
+College coursework portfolio for **IA 455** at Eastern Michigan University.  
+**Virtual IR lab**, **memory forensics** (Volatility 2), quizzes, exams, and a **final capstone** tying malware indicators to logs and host triage.
 
 **Author:** [Julio Barros](https://github.com/Jkbarros)  
 **Index:** [college-projects](https://github.com/Jkbarros/college-projects)
@@ -10,44 +12,54 @@ Labs, quizzes, memory forensics practical work, and course assessments.
 
 | Area | Description |
 |------|-------------|
-| [Archive index](docs/archive-index.md) | Catalog of files in `archive/` with direct links |
-| [`archive/canvas-submissions/`](archive/canvas-submissions/) | Labs, quizzes, midterm/final PDFs, memory forensics assignment, analysis logs |
+| [Submissions catalog](docs/submissions-catalog.md) | Curated guides + archive conversions |
+| [Lab 1 — virtual IR lab](docs/lab1-virtual-lab.md) | pfSense, Security Onion, Kali, Windows 10 |
+| [Assignment 2 — memory forensics](docs/assignment-2-memory-forensics.md) | Volatility 2 plugin walkthrough |
+| [Final capstone](docs/final-capstone.md) | Malware hashes, PowerShell, logs, PCAP |
+| [Learning notes](docs/learning-notes.md) | Quiz concepts without copying prompts |
+| [full_analysis.log excerpt](docs/full-analysis-log.md) | Volatility session capture |
+| [Midterm](docs/ia455-midterm.md) · [Final exam](docs/ia455-final-exam.md) | PDF exports with screenshots |
+| [Archive index](docs/archive-index.md) | All original Canvas files |
 
-### Highlights in the archive
+### Highlights
 
-- **Lab 1** and quizzes (chapters covered in course)
-- **Assignment 2 - Memory Forensics Practical** (DOCX)
-- **Midterm and final** exam PDFs
-- **`full_analysis.log`** - supporting output from forensic analysis work
-- **FINAL IA455** consolidated submission
+- Curated markdown labs (readable on GitHub) plus DOCX/PDF archive conversions
+- Real `full_analysis.log` from memory-dump analysis in class
 
 ## Topics covered
 
 ```mermaid
 flowchart LR
-  IR[Incident response lifecycle]
-  F[Memory forensics]
-  A[Analysis and reporting]
-  IR --> F
-  F --> A
+  P[Prepare]
+  D[Detect]
+  A[Analyze]
+  C[Contain]
+  R[Recover]
+  P --> D --> A --> C --> R
+```
+
+## Regenerate docs
+
+```bash
+pip install -r requirements.txt
+python scripts/docx_to_markdown.py
+python scripts/build_pdf_docs.py
+python scripts/build_analysis_log_doc.py
+python scripts/generate_readme_demo.py
 ```
 
 ## Related repos
 
 | Course | Link |
 |--------|------|
-| IA 103 - Information Security Overview | [information-security-overview](https://github.com/Jkbarros/information-security-overview) |
-| COSC 381 - Software Engineering | [software-engineering-solutions](https://github.com/Jkbarros/software-engineering-solutions) |
-
-## Roadmap
-
-- [ ] Convert key labs to markdown in `docs/` (same pattern as IA 103)
-- [ ] Redact any sensitive identifiers before expanding public docs
+| IA 447 - Digital Forensics I | [ia447-digital-forensics-i](https://github.com/Jkbarros/ia447-digital-forensics-i) |
+| IA 103 - Information Security | [information-security-overview](https://github.com/Jkbarros/information-security-overview) |
+| college-projects index | [college-projects](https://github.com/Jkbarros/college-projects) |
 
 ## Notes for readers
 
-- This repo documents **my submitted work**; forensic artifacts are for academic context only.
-- Do not treat course logs or reports as guidance for live incident handling without professional validation.
+- Academic IR exercises only — not operational runbooks for production incidents.
+- Forensic logs and malware indicators are **point-in-time** course artifacts.
 
 ## License
 
