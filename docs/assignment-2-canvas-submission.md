@@ -6,7 +6,7 @@
 
 > Canvas export. For study summaries without duplicating instructor prompts, see [learning-notes.md](learning-notes.md).
 
-Name: Julio Barros EID:E01963387
+Name: Julio Barros (student ID redacted)
 
 To Identify the System Profile
 
