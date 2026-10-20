@@ -10,6 +10,7 @@ Labs, quizzes, memory forensics practical work, and course assessments.
 
 | Area | Description |
 |------|-------------|
+| [Archive index](docs/archive-index.md) | Catalog of files in `archive/` with direct links |
 | [`archive/canvas-submissions/`](archive/canvas-submissions/) | Labs, quizzes, midterm/final PDFs, memory forensics assignment, analysis logs |
 
 ### Highlights in the archive
