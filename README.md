@@ -1,6 +1,6 @@
-# IA 455 — Incident Response
+# IA 455 - Incident Response
 
-College coursework archive for **IA 455 — Incident Response** at Eastern Michigan University.  
+College coursework archive for **IA 455 - Incident Response** at Eastern Michigan University.  
 Labs, quizzes, memory forensics practical work, and course assessments.
 
 **Author:** [Julio Barros](https://github.com/Jkbarros)  
@@ -15,9 +15,9 @@ Labs, quizzes, memory forensics practical work, and course assessments.
 ### Highlights in the archive
 
 - **Lab 1** and quizzes (chapters covered in course)
-- **Assignment 2 — Memory Forensics Practical** (DOCX)
+- **Assignment 2 - Memory Forensics Practical** (DOCX)
 - **Midterm and final** exam PDFs
-- **`full_analysis.log`** — supporting output from forensic analysis work
+- **`full_analysis.log`** - supporting output from forensic analysis work
 - **FINAL IA455** consolidated submission
 
 ## Topics covered
@@ -35,8 +35,8 @@ flowchart LR
 
 | Course | Link |
 |--------|------|
-| IA 103 — Information Security Overview | [information-security-overview](https://github.com/Jkbarros/information-security-overview) |
-| COSC 381 — Software Engineering | [software-engineering-solutions](https://github.com/Jkbarros/software-engineering-solutions) |
+| IA 103 - Information Security Overview | [information-security-overview](https://github.com/Jkbarros/information-security-overview) |
+| COSC 381 - Software Engineering | [software-engineering-solutions](https://github.com/Jkbarros/software-engineering-solutions) |
 
 ## Roadmap
 
